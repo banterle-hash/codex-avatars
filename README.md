@@ -1,6 +1,6 @@
 # Flame 🐾
 
-A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl.
+A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl. The v2 desktop pet adds sixteen looking directions.
 
 <p>
   <img src="output/emotes/waving.webp" width="192" height="208" alt="Flame waving hello">
@@ -10,13 +10,14 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
 
 ## Download
 
-- **[Pet package](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-pet-share.zip)** — the desktop pet and installation instructions, about 1.7 MB.
-- **[Full avatar and emote pack](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-avatar-pack.zip)** — the pet, transparent avatar, all expressions, and an interactive gallery.
-- **[Sprite sheet](output/flame/spritesheet.webp)** — for supported custom-pet uploaders.
+- **[Desktop pet v2](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-v2.zip)** — the latest pet, with sixteen looking directions, for hosts supporting sprite format v2.
+- **[Classic pet v1](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-pet-share.zip)** — the original pet and installation instructions; also suitable for hosts requiring the v1 format.
+- **[Full avatar and emote pack](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-avatar-pack.zip)** — the classic v1 pet, transparent avatar, all expressions, and an interactive gallery. Download v2 separately for directional looks.
+- **[Web sprite sheet (v1)](output/flame/spritesheet.webp)** — open the file and use GitHub's **Download raw file** button.
 
 ## Install on desktop
 
-1. Download and extract the pet package.
+1. Download and extract the desktop v2 package, or the classic v1 package if your host requires it.
 2. Place the entire `flame` folder in `~/.codex/pets/` (or the `pets` directory under your custom `CODEX_HOME`). Back up any existing Flame folder first.
 3. Confirm these two files exist:
 
@@ -28,7 +29,9 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
 4. Open **Settings → Pets → Refresh**, then choose **Flame**.
 5. Enter `/pet` to wake him.
 
-For ChatGPT web accounts with Pets enabled, use **Settings → Personalization → Pet → Upload pet** and select the extracted `spritesheet.webp` image, not the ZIP. Desktop pets do not automatically sync to the web. See the [official Pets documentation](https://learn.chatgpt.com/docs/pets).
+## Use on ChatGPT web
+
+For accounts with Pets enabled, use **Settings → Personalization → Pet → Upload pet** and select `spritesheet.webp` from the **classic v1 package**. The web uploader requires a transparent 1536 × 1872 image; the larger v2 sheet does not meet that requirement. Upload the image, not the ZIP. Desktop pets do not automatically sync to the web. See the [official Pets documentation](https://learn.chatgpt.com/docs/pets).
 
 ## Expressions
 
@@ -54,14 +57,24 @@ The pack has thirteen PNG expressions, ten looping animated WebP emotes, and thr
 Extract the full pack and open `preview.html` in a browser. It includes light/dark backgrounds, pause/play controls, and individual downloads. From a repository checkout, open `output/preview.html`.
 
 - `output/avatar.png` and `output/avatar.webp`: transparent 1024 × 1024 avatar.
-- `output/flame/`: installable manifest and transparent sprite sheets.
+- `output/flame-v2/`: v2 desktop manifest and sprite sheet; install these together in a folder named `flame`.
+- `output/flame/`: classic v1 manifest and transparent sprite sheets, including the web-compatible sheet.
 - `output/emotes/`: finished reaction images and animations.
 - `output/emotes.json`: filenames and animation timings.
 - `output/animation-contact-sheet.png`: all native sprite frames.
 - `output/SHARE.md`: portable installation and sharing instructions.
 
-This pack retains the v1 format: an 8 × 9 atlas, 192 × 208 pixel cells, and a total size of 1536 × 1872. The host's five-frame `jumping` slot is deliberately a paw greeting for hover; the original celebratory hop is still `output/emotes/jumping.webp`. Directional-look rows from the v2 format are not included.
+## Sprite formats
+
+| Version | Atlas | Dimensions | Looking directions |
+| --- | --- | --- | --- |
+| Desktop v2 | 8 × 11 | 1536 × 2288 | 16 |
+| Classic v1 / web | 8 × 9 | 1536 × 1872 | None |
+
+Both formats use 192 × 208 pixel cells. V2 preserves the original nine animation rows and declares `spriteVersionNumber: 2`. The host's five-frame `jumping` slot is deliberately a paw greeting for hover; the original celebratory hop is still `output/emotes/jumping.webp`.
+
+## Credits
 
 Artwork was created with OpenAI image generation and processed with Hatch Pet tools. Transparent fur edges were cleaned while preserving alpha, and WebP assets use lossless compression. Frame counts, timing, transparency, atlas layout, and package integrity were validated; the preview was visually checked on light and dark backgrounds.
 
-Only finished artwork and sharing documentation are published here. Reference photos, videos, local paths, and working generation files are excluded. Flame is a custom pet project, not an official OpenAI mascot.
+Only finished artwork and sharing documentation are published here. Reference photos, videos, and working generation files are excluded. Flame is an independent custom pet project.

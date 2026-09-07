@@ -20,3 +20,9 @@
 !/output/emotes/*.png
 !/output/emotes/*.webp
 .DS_Store
+
+# Finished v2 desktop pet; generation workspace remains private.
+!/output/flame-v2/
+/output/flame-v2/*
+!/output/flame-v2/pet.json
+!/output/flame-v2/spritesheet.webp
