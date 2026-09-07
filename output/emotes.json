@@ -1,0 +1,186 @@
+[
+  {
+    "id": "idle",
+    "animated": true,
+    "frames": 6,
+    "duration_ms": [
+      280,
+      110,
+      110,
+      140,
+      140,
+      320
+    ],
+    "png": "emotes/idle.png",
+    "webp": "emotes/idle.webp",
+    "category": "native"
+  },
+  {
+    "id": "running-right",
+    "animated": true,
+    "frames": 8,
+    "duration_ms": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "png": "emotes/running-right.png",
+    "webp": "emotes/running-right.webp",
+    "category": "native"
+  },
+  {
+    "id": "running-left",
+    "animated": true,
+    "frames": 8,
+    "duration_ms": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "png": "emotes/running-left.png",
+    "webp": "emotes/running-left.webp",
+    "category": "native"
+  },
+  {
+    "id": "waving",
+    "animated": true,
+    "frames": 4,
+    "duration_ms": [
+      140,
+      140,
+      140,
+      280
+    ],
+    "png": "emotes/waving.png",
+    "webp": "emotes/waving.webp",
+    "category": "native"
+  },
+  {
+    "id": "jumping",
+    "animated": true,
+    "frames": 5,
+    "duration_ms": [
+      140,
+      140,
+      140,
+      140,
+      280
+    ],
+    "png": "emotes/jumping.png",
+    "webp": "emotes/jumping.webp",
+    "category": "bonus"
+  },
+  {
+    "id": "failed",
+    "animated": true,
+    "frames": 8,
+    "duration_ms": [
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      240
+    ],
+    "png": "emotes/failed.png",
+    "webp": "emotes/failed.webp",
+    "category": "native"
+  },
+  {
+    "id": "waiting",
+    "animated": true,
+    "frames": 6,
+    "duration_ms": [
+      150,
+      150,
+      150,
+      150,
+      150,
+      260
+    ],
+    "png": "emotes/waiting.png",
+    "webp": "emotes/waiting.webp",
+    "category": "native"
+  },
+  {
+    "id": "running",
+    "animated": true,
+    "frames": 6,
+    "duration_ms": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "png": "emotes/running.png",
+    "webp": "emotes/running.webp",
+    "category": "native"
+  },
+  {
+    "id": "review",
+    "animated": true,
+    "frames": 6,
+    "duration_ms": [
+      150,
+      150,
+      150,
+      150,
+      150,
+      280
+    ],
+    "png": "emotes/review.png",
+    "webp": "emotes/review.webp",
+    "category": "native"
+  },
+  {
+    "id": "sleepy",
+    "animated": false,
+    "png": "emotes/sleepy.png",
+    "webp": "emotes/sleepy.webp",
+    "category": "bonus"
+  },
+  {
+    "id": "love",
+    "animated": false,
+    "png": "emotes/love.png",
+    "webp": "emotes/love.webp",
+    "category": "bonus"
+  },
+  {
+    "id": "surprised",
+    "animated": false,
+    "png": "emotes/surprised.png",
+    "webp": "emotes/surprised.webp",
+    "category": "bonus"
+  },
+  {
+    "id": "howling",
+    "animated": true,
+    "frames": 6,
+    "duration_ms": [
+      350,
+      160,
+      300,
+      450,
+      180,
+      350
+    ],
+    "png": "emotes/howling.png",
+    "webp": "emotes/howling.webp",
+    "category": "bonus"
+  }
+]

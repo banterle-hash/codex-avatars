@@ -1,0 +1,22 @@
+# Publish only the finished pet, gallery, and documentation.
+/*
+!/.gitignore
+!/README.md
+!/output/
+/output/*
+!/output/SHARE.md
+!/output/preview.html
+!/output/avatar.png
+!/output/avatar.webp
+!/output/emotes.json
+!/output/animation-contact-sheet.png
+!/output/emotes/
+!/output/flame/
+/output/flame/*
+!/output/flame/pet.json
+!/output/flame/spritesheet.webp
+!/output/flame/spritesheet.png
+/output/emotes/*
+!/output/emotes/*.png
+!/output/emotes/*.webp
+.DS_Store

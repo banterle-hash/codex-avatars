@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flame · Your Sheltie companion</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f3ec;color:#29271f;font:16px system-ui,sans-serif}main{max-width:1150px;margin:auto;padding:48px 28px}header{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-bottom:32px}h1{font:56px Georgia,serif;margin:8px 0}p{line-height:1.6;color:#676357;max-width:600px}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#846d41}button,a{font:inherit}button{border:1px solid #c9c4b7;border-radius:24px;background:transparent;padding:10px 18px;cursor:pointer;color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #af6729;outline-offset:4px}.actions{display:flex;gap:10px;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fffdf8;border:1px solid #e5dfd2;border-radius:16px;padding:16px;text-align:center}.art{height:208px;display:flex;align-items:center;justify-content:center}.art img{max-width:100%;width:192px;height:208px;object-fit:contain}.card h2{font-size:14px;margin:12px 0 5px;font-weight:550}.card small{font-size:11px;color:#8c8473}.card a{font-size:12px;color:#876132}.avatar{width:200px;height:200px;object-fit:contain}.dark{background:#191b20;color:#f3efdf}.dark .card{background:#252831;border-color:#373b43}.dark p,.dark small{color:#b9b3a6}.dark a{color:#ebba79}footer{font-size:12px;color:#797366;margin-top:32px}.instructions{padding:18px 0;font-size:14px}a{color:#876132}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}header{align-items:flex-start}.avatar{width:130px;height:130px}h1{font-size:44px}}@media(max-width:420px){main{padding:30px 15px}.avatar{display:none}.art{height:170px}.art img{height:170px}.card{padding:10px}}
+</style>
+<main>
+<header><div><div class="eyebrow">A companion made from your references</div><h1>Hello there.</h1><p>Meet Flame, your sable-and-white Sheltie in sculpted clay. A friendly paw wave to greet you, a calm companion while you work, and thirteen expressions for everything in between.</p><div class="actions"><button id="pause" aria-pressed="false">Pause animations</button><button id="theme" aria-pressed="false">Dark background</button><a href="avatar.png" download>Save avatar</a><a href="https://github.com/banterle-hash/flameatar/releases/latest/download/flame-pet-share.zip" download>Share Flame</a></div></div><img class="avatar" src="emotes/waving.png" data-id="waving" data-animated="true" alt="Flame greeting you with a paw wave" width="192" height="208"></header>
+<div class="grid" id="grid"></div>
+<p class="instructions">To share Flame, send the <a href="https://github.com/banterle-hash/flameatar/releases/latest/download/flame-pet-share.zip" download>pet package</a>. On desktop, place its <strong>flame</strong> folder inside <strong>~/.codex/pets/</strong>, then open Settings → Pets → Refresh → Flame. Enter <strong>/pet</strong> to wake him. On ChatGPT web accounts with Pets enabled, upload <a href="flame/spritesheet.webp" download>the sprite sheet</a> in Settings → Personalization → Pet.</p>
+<footer>Resting: calm idle · Greeting on hover · Celebration and howl remain available below.<br>Transparent PNG &amp; lossless WebP · <a href="https://github.com/banterle-hash/flameatar/releases/latest/download/flame-avatar-pack.zip" download>Download the full avatar and emote pack</a></footer>
+</main>
+<script>
+const labels=['Hello there','Just here','On the move →','← On the move','Your turn','Thinking it through','All ready','Oh no','Little celebration','Sleepy','With love','Oh!','Awooo!'];
+const ids=['waving','idle','running-right','running-left','waiting','running','review','failed','jumping','sleepy','love','surprised','howling'];
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let paused=reduced;
+const grid=document.getElementById('grid');
+ids.forEach((id,i)=>{const animated=!['sleepy','love','surprised'].includes(id);const card=document.createElement('article');card.className='card';card.innerHTML=`<div class="art"><img src="emotes/${id}.${animated&&paused?'png':'webp'}" alt="Flame: ${labels[i]}" data-id="${id}" data-animated="${animated}" width="192" height="208" loading="lazy" decoding="async"></div><h2>${labels[i]}</h2><small>${id==='waving'?'Default greeting':i<8?'Native animation':animated?'Bonus animation':'Bonus emote'}</small><p style="margin:8px 0 0"><a href="emotes/${id}.png" download>PNG</a>${animated?` · <a href="emotes/${id}.webp" download>Animated WebP</a>`:''}</p>`;grid.append(card)});
+const pause=document.getElementById('pause');
+function sync(){pause.textContent=paused?'Play animations':'Pause animations';pause.setAttribute('aria-pressed',String(paused));document.querySelectorAll('[data-animated="true"]').forEach(img=>img.src=`emotes/${img.dataset.id}.${paused?'png':'webp'}`)}
+pause.onclick=()=>{paused=!paused;sync()};sync();
+document.getElementById('theme').onclick=e=>{const dark=document.body.classList.toggle('dark');e.target.textContent=dark?'Light background':'Dark background';e.target.setAttribute('aria-pressed',String(dark))};
+</script>
+</html>
