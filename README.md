@@ -4,7 +4,7 @@ Custom avatars, animated pets, and emote packs for Codex and compatible ChatGPT 
 
 ## Meet Flame 🐾
 
-A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl. The v2 desktop pet adds sixteen looking directions.
+A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl. The desktop pet also has sixteen looking directions.
 
 <p>
   <img src="output/emotes/waving.webp" width="192" height="208" alt="Flame waving hello">
@@ -14,14 +14,18 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
 
 ## Download
 
-- **[Desktop pet v2](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip)** — the latest pet, with sixteen looking directions, for hosts supporting sprite format v2.
-- **[Classic pet v1](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip)** — the original pet and installation instructions; also suitable for hosts requiring the v1 format.
-- **[Full avatar and emote pack](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip)** — the classic v1 pet, transparent avatar, all expressions, and an interactive gallery. Download v2 separately for directional looks.
-- **[Web sprite sheet (v1)](output/flame/spritesheet.webp)** — open the file and use GitHub's **Download raw file** button.
+### [Download Flame](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip)
+
+The desktop pet, ready to install—with a paw greeting and sixteen looking directions.
+
+Other downloads:
+
+- [ChatGPT web version](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip) — contains the smaller sprite sheet required for web upload.
+- [Avatar & emote pack](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip) — optional artwork, reactions, and an interactive gallery. Includes the web-compatible pet; use **Download Flame** above for the desktop pet with directional looks.
 
 ## Install on desktop
 
-1. Download and extract the desktop v2 package, or the classic v1 package if your host requires it.
+1. Select **Download Flame** above and extract the ZIP.
 2. Place the entire `flame` folder in `~/.codex/pets/` (or the `pets` directory under your custom `CODEX_HOME`). Back up any existing Flame folder first.
 3. Confirm these two files exist:
 
@@ -35,7 +39,7 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
 
 ## Use on ChatGPT web
 
-For accounts with Pets enabled, use **Settings → Personalization → Pet → Upload pet** and select `spritesheet.webp` from the **classic v1 package**. The web uploader requires a transparent 1536 × 1872 image; the larger v2 sheet does not meet that requirement. Upload the image, not the ZIP. Desktop pets do not automatically sync to the web. See the [official Pets documentation](https://learn.chatgpt.com/docs/pets).
+Download and extract the **ChatGPT web version** above. For accounts with Pets enabled, use **Settings → Personalization → Pet → Upload pet** and select `flame/spritesheet.webp` from that package. Upload the image, not the ZIP. Desktop pets do not automatically sync to the web. See the [official Pets documentation](https://learn.chatgpt.com/docs/pets).
 
 ## Expressions
 
@@ -69,6 +73,8 @@ Extract the full pack and open `preview.html` in a browser. It includes light/da
 - `output/SHARE.md`: portable installation and sharing instructions.
 
 ## Sprite formats
+
+**Download Flame** uses sprite format v2 for compatible desktop hosts. The **ChatGPT web version** uses v1 because the web uploader requires a transparent 1536 × 1872 image. Use the web package on older desktop hosts that require v1, too.
 
 | Version | Atlas | Dimensions | Looking directions |
 | --- | --- | --- | --- |
