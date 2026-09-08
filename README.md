@@ -1,4 +1,8 @@
-# Flame 🐾
+# Codex Avatars
+
+Custom avatars, animated pets, and emote packs for Codex and compatible ChatGPT surfaces.
+
+## Meet Flame 🐾
 
 A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl. The v2 desktop pet adds sixteen looking directions.
 
@@ -10,9 +14,9 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
 
 ## Download
 
-- **[Desktop pet v2](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-v2.zip)** — the latest pet, with sixteen looking directions, for hosts supporting sprite format v2.
-- **[Classic pet v1](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-pet-share.zip)** — the original pet and installation instructions; also suitable for hosts requiring the v1 format.
-- **[Full avatar and emote pack](https://github.com/banterle-hash/flameatar/releases/latest/download/flame-avatar-pack.zip)** — the classic v1 pet, transparent avatar, all expressions, and an interactive gallery. Download v2 separately for directional looks.
+- **[Desktop pet v2](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip)** — the latest pet, with sixteen looking directions, for hosts supporting sprite format v2.
+- **[Classic pet v1](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip)** — the original pet and installation instructions; also suitable for hosts requiring the v1 format.
+- **[Full avatar and emote pack](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip)** — the classic v1 pet, transparent avatar, all expressions, and an interactive gallery. Download v2 separately for directional looks.
 - **[Web sprite sheet (v1)](output/flame/spritesheet.webp)** — open the file and use GitHub's **Download raw file** button.
 
 ## Install on desktop
