@@ -1,10 +1,8 @@
 # Codex Avatars
 
-Custom avatars, animated pets, and emote packs for Codex and compatible ChatGPT surfaces.
+Custom claymation pets and emote packs for [Codex](https://openai.com/codex) and ChatGPT Pets.
 
-## Meet Flame 🐾
-
-A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fur, a friendly paw wave, and thirteen expressions—including a howl. The desktop pet also has sixteen looking directions.
+Right now the pack is **Flame** — a sable-and-white Sheltie rendered as stop-motion clay, built from a real photo.
 
 <p>
   <img src="output/emotes/waving.webp" width="192" height="208" alt="Flame waving hello">
@@ -12,79 +10,99 @@ A sable-and-white Sheltie companion for Codex and ChatGPT, with sculpted clay fu
   <img src="output/emotes/howling.webp" width="192" height="208" alt="Flame howling">
 </p>
 
-## Download
+Flame has 13 expressions (including a howl), looping emotes, and — on desktop — 16 looking directions plus a paw-wave hover greeting.
 
-### [Download Flame](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip)
+## Which download?
 
-The desktop pet, ready to install—with a paw greeting and sixteen looking directions.
+| I want… | Get this |
+| --- | --- |
+| Codex / ChatGPT **desktop** pet (looks around + paw greet) | [**flame-v2.zip**](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip) |
+| ChatGPT **web** upload (or older desktop hosts) | [flame-pet-share.zip](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip) |
+| Avatar, emotes, and the in-browser gallery | [flame-avatar-pack.zip](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip) |
 
-Other downloads:
+Web and desktop do **not** sync. Install each surface separately.
 
-- [ChatGPT web version](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip) — contains the smaller sprite sheet required for web upload.
-- [Avatar & emote pack](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip) — optional artwork, reactions, and an interactive gallery. Includes the web-compatible pet; use **Download Flame** above for the desktop pet with directional looks.
+## Desktop install (Codex)
 
-## Install on desktop
-
-1. Select **Download Flame** above and extract the ZIP.
-2. Place the entire `flame` folder in `~/.codex/pets/` (or the `pets` directory under your custom `CODEX_HOME`). Back up any existing Flame folder first.
-3. Confirm these two files exist:
+1. Download **flame-v2.zip** and extract it.
+2. Copy the whole `flame` folder to `~/.codex/pets/`  
+   (or `$CODEX_HOME/pets/` if you set a custom home).  
+   Back up any existing `flame` folder first.
+3. You should have:
 
    ```text
    ~/.codex/pets/flame/pet.json
    ~/.codex/pets/flame/spritesheet.webp
    ```
 
-4. Open **Settings → Pets → Refresh**, then choose **Flame**.
-5. Enter `/pet` to wake him.
+4. **Settings → Pets → Refresh**, then choose **Flame**.
+5. Type `/pet` to wake him.
 
-## Use on ChatGPT web
+## ChatGPT web
 
-Download and extract the **ChatGPT web version** above. For accounts with Pets enabled, use **Settings → Personalization → Pet → Upload pet** and select `flame/spritesheet.webp` from that package. Upload the image, not the ZIP. Desktop pets do not automatically sync to the web. See the [official Pets documentation](https://learn.chatgpt.com/docs/pets).
+1. Download and extract **flame-pet-share.zip**.
+2. **Settings → Personalization → Pet → Upload pet**.
+3. Upload `flame/spritesheet.webp` — the image, not the ZIP.
+
+Pets must be enabled on the account. Official docs: [ChatGPT Pets](https://learn.chatgpt.com/docs/pets).
 
 ## Expressions
 
-| Expression | Behavior |
+| Expression | What you see |
 | --- | --- |
-| Hello there | Friendly paw greeting; also used for hover |
-| Just here | Calm resting and blinking |
-| On the move → / ← | Rightward and leftward trots |
-| Your turn | Expectant tilt and asking paw |
-| Thinking it through | Concentrating on work |
-| All ready | Satisfied and attentive |
-| Oh no | Lowered head and disappointed ears |
-| Little celebration | A playful hop, available as a separate emote |
-| Sleepy | A resting expression |
+| Hello there | Friendly paw greeting (also used on hover) |
+| Just here | Calm rest + blink |
+| On the move → / ← | Trot right / left |
+| Your turn | Expectant tilt + asking paw |
+| Thinking it through | Concentrating |
+| All ready | Satisfied, attentive |
+| Oh no | Head down, disappointed ears |
+| Little celebration | Playful hop (also a standalone emote) |
+| Sleepy | Resting |
 | With love | Hugging a heart |
 | Oh! | Surprise |
-| Awooo! | An animated howl |
+| Awooo! | Animated howl |
 
-The pack has thirteen PNG expressions, ten looping animated WebP emotes, and three static WebP emotes. The pet rests calmly and greets you on hover. Celebration and howling remain standalone emotes.
+Pack contents: 13 PNG expressions, 10 looping WebP emotes, 3 static WebP emotes. Idle + hover live on the pet; celebration and howl also ship as standalone files.
 
-## Preview and files
+Preview everything by opening `preview.html` from the full pack (or `output/preview.html` in a repo checkout). Light/dark backgrounds, play/pause, per-file downloads.
 
-Extract the full pack and open `preview.html` in a browser. It includes light/dark backgrounds, pause/play controls, and individual downloads. From a repository checkout, open `output/preview.html`.
+## What’s in the repo
 
-- `output/avatar.png` and `output/avatar.webp`: transparent 1024 × 1024 avatar.
-- `output/flame-v2/`: v2 desktop manifest and sprite sheet; install these together in a folder named `flame`.
-- `output/flame/`: classic v1 manifest and transparent sprite sheets, including the web-compatible sheet.
-- `output/emotes/`: finished reaction images and animations.
-- `output/emotes.json`: filenames and animation timings.
-- `output/animation-contact-sheet.png`: all native sprite frames.
-- `output/SHARE.md`: portable installation and sharing instructions.
+| Path | What it is |
+| --- | --- |
+| `output/avatar.png` / `output/avatar.webp` | 1024×1024 avatar (clay Sheltie on black; knock out black if you need alpha) |
+| `output/flame-v2/` | Desktop v2 manifest + sprite sheet — install as a folder named `flame` |
+| `output/flame/` | Classic v1 / web sheet |
+| `output/emotes/` | Finished reactions |
+| `output/emotes.json` | Filenames and timings |
+| `output/animation-contact-sheet.png` | Every native sprite frame |
+| `output/SHARE.md` | Portable install notes |
 
 ## Sprite formats
 
-**Download Flame** uses sprite format v2 for compatible desktop hosts. The **ChatGPT web version** uses v1 because the web uploader requires a transparent 1536 × 1872 image. Use the web package on older desktop hosts that require v1, too.
+Both atlases use **192×208** cells.
 
-| Version | Atlas | Dimensions | Looking directions |
+| Version | Atlas | Size | Looking directions |
 | --- | --- | --- | --- |
-| Desktop v2 | 8 × 11 | 1536 × 2288 | 16 |
-| Classic v1 / web | 8 × 9 | 1536 × 1872 | None |
+| Desktop v2 | 8×11 | 1536×2288 | 16 |
+| Classic v1 / web | 8×9 | 1536×1872 | none |
 
-Both formats use 192 × 208 pixel cells. V2 preserves the original nine animation rows and declares `spriteVersionNumber: 2`. The host's five-frame `jumping` slot is deliberately a paw greeting for hover; the original celebratory hop is still `output/emotes/jumping.webp`.
+V2 keeps the original nine animation rows and sets `spriteVersionNumber: 2`. The host’s five-frame `jumping` slot is a **paw greeting** for hover; the celebratory hop is still `output/emotes/jumping.webp`.
 
-## Credits
+Use v1 if the web uploader (transparent 1536×1872) or an older desktop host rejects v2.
 
-Artwork was created with OpenAI image generation and processed with Hatch Pet tools. Transparent fur edges were cleaned while preserving alpha, and WebP assets use lossless compression. Frame counts, timing, transparency, atlas layout, and package integrity were validated; the preview was visually checked on light and dark backgrounds.
+## How Flame was made
 
-Only finished artwork and sharing documentation are published here. Reference photos, videos, and working generation files are excluded. Flame is an independent custom pet project.
+1. **Photo → claymation stills** with [Grok Imagine](https://x.ai/grok) (xAI), matching a real Sheltie reference to sculpted clay fur.
+2. Additional frames and expressions with OpenAI image generation.
+3. Packaged for Codex/ChatGPT Pets with Hatch Pet tools.
+4. Fur edges cleaned with alpha preserved; WebP is lossless. Frame counts, timing, transparency, atlas layout, and the light/dark preview were checked by hand.
+
+Only finished artwork and sharing docs are in this repo. Source photos, videos, and generation work files stay private.
+
+Flame is an independent custom pet — not an official OpenAI or xAI product.
+
+## License / reuse
+
+Personal use and sharing of the packaged pet is fine. Don’t present Flame as an official mascot. If you remix the art, credit this repo and Grok Imagine for the clay look.
