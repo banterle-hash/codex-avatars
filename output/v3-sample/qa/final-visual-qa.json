@@ -1,0 +1,11 @@
+{
+  "visual_qa": "pass",
+  "reviewer": "independent v3_sample_qa worker",
+  "scope": "17-pose comparison sample",
+  "idle": "pass; modest visible improvement",
+  "greeting": "pass; more neutral intervening poses, aesthetic alternative",
+  "head_turn": "pass; improved registration, final downward-left poses subtle",
+  "artifact_resolution": "Exact PNG and connected-component/roundtrip checks retract viewer-only detached-triangle concern",
+  "playback_limit": "Independent reviewer saw static sequences; parent browser checks recorded separately",
+  "release_packaging_eligible": false
+}

@@ -12,6 +12,20 @@ Right now the pack is **Flame** — a sable-and-white Sheltie rendered as stop-m
 
 Flame has 13 expressions (including a howl), looping emotes, and — on desktop — 16 looking directions plus a paw-wave hover greeting.
 
+## Flame v3 preview
+
+The v3 motion study has **17 new poses**: a breathing-and-blinking idle, a paw greeting, and a six-pose head turn. The head-turn sample has steadier body proportions; the idle change is subtle, and the greeting offers a different expression.
+
+<p>
+  <img src="output/v3-sample/v3-idle.webp" width="192" height="208" alt="Flame v3 breathing and blinking">
+  <img src="output/v3-sample/v3-jumping.webp" width="192" height="208" alt="Flame v3 paw greeting">
+  <img src="output/v3-sample/v3-head-turn.webp" width="192" height="208" alt="Flame v3 looking down from right to left">
+</p>
+
+**[View all v2/v3 comparisons and frames](output/v3-sample/README.md)** · **[Download the v3 preview](https://github.com/banterle-hash/codex-avatars/releases/tag/v3.0.0-preview.1)**
+
+Download the preview ZIP, extract it, and open `preview.html` for synchronized playback, frame stepping, speed controls, and light/dark backgrounds. This is an artwork sample, not an installable pet. Use the stable v2 package below for installation.
+
 ## Which download?
 
 | I want… | Get this |

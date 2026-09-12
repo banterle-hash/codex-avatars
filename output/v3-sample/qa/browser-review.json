@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "url": "http://127.0.0.1:8792/preview.html",
+  "checks": [
+    "Browser loads and renders both versions at native cell size",
+    "Study tabs switch correctly",
+    "Pause and next-frame controls work",
+    "Dark and checker backgrounds render cleanly",
+    "Speed selector works",
+    "Head-turn frame labels update",
+    "Playback advances via synchronized PNG frames"
+  ],
+  "sample_only": true
+}

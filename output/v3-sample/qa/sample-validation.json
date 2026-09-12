@@ -1,0 +1,406 @@
+{
+  "ok": true,
+  "scope": "comparison sample, not an installable atlas",
+  "issues": [],
+  "extraction": [
+    {
+      "state": "idle",
+      "frame_count": 6,
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_bounds": [
+        [
+          69,
+          140,
+          405,
+          589
+        ],
+        [
+          411,
+          140,
+          748,
+          589
+        ],
+        [
+          758,
+          145,
+          1094,
+          589
+        ],
+        [
+          1102,
+          144,
+          1440,
+          589
+        ],
+        [
+          1450,
+          140,
+          1787,
+          589
+        ],
+        [
+          1795,
+          140,
+          2132,
+          589
+        ]
+      ],
+      "shared_scale": 0.4298440979955457,
+      "source_sha256": "69971120edc248ea90eb6b749167aeb79d0caf3addf8a44d54a30618f04cc1d7",
+      "method": "Hatch Pet component recovery and shared-scale lower-body registration",
+      "packaging_eligible": false
+    },
+    {
+      "state": "jumping",
+      "frame_count": 5,
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_bounds": [
+        [
+          93,
+          109,
+          446,
+          619
+        ],
+        [
+          510,
+          113,
+          863,
+          620
+        ],
+        [
+          898,
+          100,
+          1294,
+          623
+        ],
+        [
+          1364,
+          112,
+          1720,
+          620
+        ],
+        [
+          1789,
+          110,
+          2145,
+          620
+        ]
+      ],
+      "shared_scale": 0.3690248565965583,
+      "source_sha256": "96f67613dcb55df5a7bb5feac9366a850c6eff156f0c3a911e35719a84b23c9a",
+      "method": "Hatch Pet component recovery and shared-scale lower-body registration",
+      "packaging_eligible": false
+    },
+    {
+      "state": "head-turn",
+      "frame_count": 6,
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_bounds": [
+        [
+          42,
+          134,
+          351,
+          625
+        ],
+        [
+          404,
+          148,
+          712,
+          625
+        ],
+        [
+          763,
+          160,
+          1074,
+          625
+        ],
+        [
+          1120,
+          174,
+          1435,
+          625
+        ],
+        [
+          1493,
+          154,
+          1802,
+          625
+        ],
+        [
+          1854,
+          146,
+          2160,
+          625
+        ]
+      ],
+      "shared_scale": 0.39307535641547864,
+      "source_sha256": "7815d9231c932db11f1f0452c42602c8b016c166bd8a32203d98427e35372346",
+      "method": "Hatch Pet component recovery and shared-scale lower-body registration",
+      "packaging_eligible": false
+    }
+  ],
+  "motion_metrics": [
+    {
+      "state": "idle",
+      "v2": {
+        "heights": [
+          193,
+          194,
+          194,
+          194,
+          193,
+          192
+        ],
+        "baseline": [
+          201,
+          201,
+          201,
+          201,
+          201,
+          201
+        ],
+        "lower_anchor_x": [
+          101.81,
+          101.09,
+          101.48,
+          101.36,
+          101.19,
+          101.24
+        ],
+        "areas": [
+          18291,
+          18792,
+          18359,
+          18385,
+          18101,
+          18063
+        ],
+        "unique_frames": 6,
+        "adjacent_area_ratios": [
+          1.027,
+          1.024,
+          1.001,
+          1.016,
+          1.002
+        ]
+      },
+      "v3": {
+        "heights": [
+          193,
+          193,
+          191,
+          191,
+          193,
+          193
+        ],
+        "baseline": [
+          201,
+          201,
+          201,
+          201,
+          201,
+          201
+        ],
+        "lower_anchor_x": [
+          101.38,
+          101.03,
+          101.41,
+          101.14,
+          101.16,
+          101.01
+        ],
+        "areas": [
+          18006,
+          18048,
+          17844,
+          17915,
+          18029,
+          18045
+        ],
+        "unique_frames": 6,
+        "adjacent_area_ratios": [
+          1.002,
+          1.011,
+          1.004,
+          1.006,
+          1.001
+        ]
+      }
+    },
+    {
+      "state": "jumping",
+      "v2": {
+        "heights": [
+          196,
+          196,
+          196,
+          196,
+          196
+        ],
+        "baseline": [
+          202,
+          202,
+          202,
+          202,
+          202
+        ],
+        "lower_anchor_x": [
+          94.74,
+          101.2,
+          103.58,
+          94.64,
+          94.74
+        ],
+        "areas": [
+          17632,
+          17820,
+          18503,
+          17569,
+          17632
+        ],
+        "unique_frames": 4,
+        "adjacent_area_ratios": [
+          1.011,
+          1.038,
+          1.053,
+          1.004
+        ]
+      },
+      "v3": {
+        "heights": [
+          188,
+          187,
+          193,
+          187,
+          188
+        ],
+        "baseline": [
+          201,
+          201,
+          201,
+          201,
+          201
+        ],
+        "lower_anchor_x": [
+          101.62,
+          101.14,
+          101.49,
+          101.68,
+          101.52
+        ],
+        "areas": [
+          16059,
+          16083,
+          17434,
+          16208,
+          15920
+        ],
+        "unique_frames": 5,
+        "adjacent_area_ratios": [
+          1.001,
+          1.084,
+          1.076,
+          1.018
+        ]
+      }
+    },
+    {
+      "state": "head-turn",
+      "v2": {
+        "heights": [
+          181,
+          172,
+          151,
+          174,
+          184,
+          190
+        ],
+        "baseline": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "lower_anchor_x": [
+          101.05,
+          101.65,
+          101.97,
+          101.74,
+          101.76,
+          101.83
+        ],
+        "areas": [
+          13352,
+          13477,
+          11870,
+          14503,
+          14380,
+          14236
+        ],
+        "unique_frames": 6,
+        "adjacent_area_ratios": [
+          1.009,
+          1.135,
+          1.222,
+          1.009,
+          1.01
+        ]
+      },
+      "v3": {
+        "heights": [
+          193,
+          187,
+          183,
+          177,
+          185,
+          188
+        ],
+        "baseline": [
+          201,
+          201,
+          201,
+          201,
+          201,
+          201
+        ],
+        "lower_anchor_x": [
+          100.85,
+          101.37,
+          101.32,
+          101.38,
+          101.65,
+          101.33
+        ],
+        "areas": [
+          15963,
+          15636,
+          15504,
+          15599,
+          15517,
+          15149
+        ],
+        "unique_frames": 6,
+        "adjacent_area_ratios": [
+          1.021,
+          1.009,
+          1.006,
+          1.005,
+          1.024
+        ]
+      }
+    }
+  ],
+  "generator": "built-in ImageGen; exact underlying model not exposed",
+  "comparison": "V2 and V3 use identical per-frame timing. Head sample ping-pongs without interpolated frames."
+}

@@ -26,3 +26,14 @@
 /output/flame-v2/*
 !/output/flame-v2/pet.json
 !/output/flame-v2/spritesheet.webp
+
+# Finished v3 comparison sample and its review gallery.
+!/output/v3-sample/
+/output/v3-sample/*
+!/output/v3-sample/*.md
+!/output/v3-sample/*.html
+!/output/v3-sample/*.png
+!/output/v3-sample/*.webp
+!/output/v3-sample/v2/
+!/output/v3-sample/v3/
+!/output/v3-sample/qa/
