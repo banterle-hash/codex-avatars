@@ -12,9 +12,9 @@ Right now the pack is **Flame** — a sable-and-white Sheltie rendered as stop-m
 
 Flame has 13 expressions (including a howl), looping emotes, and — on desktop — 16 looking directions plus a paw-wave hover greeting.
 
-## Flame v3 preview
+## Flame v3
 
-The v3 motion study has **17 new poses**: a breathing-and-blinking idle, a paw greeting, and a six-pose head turn. The head-turn sample has steadier body proportions; the idle change is subtle, and the greeting offers a different expression.
+Flame v3 is the stable desktop release. It adds a breathing-and-blinking idle, a paw greeting, and a complete 16-pose seated look loop while retaining the established animation rows.
 
 <p>
   <img src="output/v3-sample/v3-idle.webp" width="192" height="208" alt="Flame v3 breathing and blinking">
@@ -22,15 +22,13 @@ The v3 motion study has **17 new poses**: a breathing-and-blinking idle, a paw g
   <img src="output/v3-sample/v3-head-turn.webp" width="192" height="208" alt="Flame v3 looking down from right to left">
 </p>
 
-**[View all v2/v3 comparisons and frames](output/v3-sample/README.md)** · **[Download the v3 preview](https://github.com/banterle-hash/codex-avatars/releases/tag/v3.0.0-preview.1)**
-
-Download the preview ZIP, extract it, and open `preview.html` for synchronized playback, frame stepping, speed controls, and light/dark backgrounds. This is an artwork sample, not an installable pet. Use the stable v2 package below for installation.
+**[View the v3 QA sheet](output/flame-v3/direction-qa.png)** · **[Download Flame v3](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v3.zip)**
 
 ## Which download?
 
 | I want… | Get this |
 | --- | --- |
-| Codex / ChatGPT **desktop** pet (looks around + paw greet) | [**flame-v2.zip**](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v2.zip) |
+| Codex / ChatGPT **desktop** pet (looks around + paw greet) | [**flame-v3.zip**](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-v3.zip) |
 | ChatGPT **web** upload (or older desktop hosts) | [flame-pet-share.zip](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-pet-share.zip) |
 | Avatar, emotes, and the in-browser gallery | [flame-avatar-pack.zip](https://github.com/banterle-hash/codex-avatars/releases/latest/download/flame-avatar-pack.zip) |
 
@@ -38,7 +36,7 @@ Web and desktop do **not** sync. Install each surface separately.
 
 ## Desktop install (Codex)
 
-1. Download **flame-v2.zip** and extract it.
+1. Download **flame-v3.zip** and extract it.
 2. Copy the whole `flame` folder to `~/.codex/pets/`  
    (or `$CODEX_HOME/pets/` if you set a custom home).  
    Back up any existing `flame` folder first.
@@ -86,7 +84,7 @@ Preview everything by opening `preview.html` from the full pack (or `output/prev
 | Path | What it is |
 | --- | --- |
 | `output/avatar.png` / `output/avatar.webp` | 1024×1024 avatar (clay Sheltie on black; knock out black if you need alpha) |
-| `output/flame-v2/` | Desktop v2 manifest + sprite sheet — install as a folder named `flame` |
+| `output/flame-v3/` | Stable desktop v3 package, validation, and direction QA — install `flame/` |
 | `output/flame/` | Classic v1 / web sheet |
 | `output/emotes/` | Finished reactions |
 | `output/emotes.json` | Filenames and timings |
@@ -99,10 +97,10 @@ Both atlases use **192×208** cells.
 
 | Version | Atlas | Size | Looking directions |
 | --- | --- | --- | --- |
-| Desktop v2 | 8×11 | 1536×2288 | 16 |
+| Desktop v3 | 8×11 | 1536×2288 | 16 |
 | Classic v1 / web | 8×9 | 1536×1872 | none |
 
-V2 keeps the original nine animation rows and sets `spriteVersionNumber: 2`. The host’s five-frame `jumping` slot is a **paw greeting** for hover; the celebratory hop is still `output/emotes/jumping.webp`.
+V3 retains the original nine animation rows, adds the two standard v2 look rows, and sets `spriteVersionNumber: 2`. The host’s five-frame `jumping` slot is a **paw greeting** for hover; the celebratory hop is still `output/emotes/jumping.webp`.
 
 Use v1 if the web uploader (transparent 1536×1872) or an older desktop host rejects v2.
 

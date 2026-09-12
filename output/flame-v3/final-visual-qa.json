@@ -1,0 +1,8 @@
+{
+  "verdict": "pass",
+  "notes": [
+    "No clipping, broken sprites, or conspicuous registration shifts are visible in the final contact sheet.",
+    "The 16-pose direction sequence reads continuously through the four cardinal views, including the 337.5-to-000 wrap.",
+    "The standard animation rows retain a consistent Flame identity and their loops show no visible reversal."
+  ]
+}
